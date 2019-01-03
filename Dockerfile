@@ -38,4 +38,6 @@ RUN mkdir /home/kops/.kube && \
 RUN echo ". /etc/bash_completion" >> ~/.bashrc && \
     echo "source <(kubectl completion bash)" >> ~/.bashrc
 
+VOLUME ["/home/kops/shared"]
+
 ENTRYPOINT ["/bin/bash"]
