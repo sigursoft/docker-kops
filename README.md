@@ -10,7 +10,7 @@ Background
 
 The `kops` tool is a command line interface that helps you create, destroy, upgrade and maintain production-grade, highly available, Kubernetes clusters.
 The `kubectl` is a command line client to deploy and manage applications on Kubernetes.
-The `aws` command line tool is a command line interface for [Amazon's Web Services](http://aws.amazon.com).
+The `aws` command line tool is a command line interface for [Amazon Web Services](http://aws.amazon.com).
 
 The _docker-kops_ creates a [Docker](https://www.docker.com) image containing all dependencies needed to run `kops`, `kubectl` and `aws`. That way, you can create and manage Kubernetes clusters on `aws` in a [Docker](https://www.docker.com) container without setting dependencies on the host system.
 
