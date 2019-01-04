@@ -40,4 +40,7 @@ RUN echo ". /etc/bash_completion" >> ~/.bashrc && \
 
 VOLUME ["/home/kops/shared"]
 
+ENV AWS_ACCESS_KEY_ID yourkeyhere
+ENV AWS_SECRET_ACCESS_KEY yoursecretaccesskeyhere
+
 ENTRYPOINT ["/bin/bash"]
