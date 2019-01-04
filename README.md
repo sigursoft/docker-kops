@@ -13,5 +13,3 @@ The `kubectl` is a command line client to deploy and manage applications on Kube
 The `aws` command line tool is a command line interface for [Amazon Web Services](http://aws.amazon.com).
 
 The _docker-kops_ creates a [Docker](https://www.docker.com) image containing all dependencies needed to run `kops`, `kubectl` and `aws`. That way, you can create and manage Kubernetes clusters on `aws` in a [Docker](https://www.docker.com) container without setting dependencies on the host system.
-
-With this image you can create, destroy and maintain Kubernetes clusters on AWS together with management of applications on Kubernetes.
