@@ -14,6 +14,19 @@ The `aws` command line tool is a command line interface for [Amazon Web Services
 
 The _docker-kops_ creates a [Docker](https://www.docker.com) image containing all dependencies needed to run `kops`, `kubectl` and `aws`. That way, you can create and manage Kubernetes clusters on `aws` in a [Docker](https://www.docker.com) container without setting dependencies on the host system.
 
+Usage
+-----------------
+
+   ```bash
+   docker run -it \
+     -e KOPS_STATE_STORE \
+     -v "$HOME"/.ssh:/home/kops/.ssh:rw \
+     -v "$HOME"/.aws:/home/kops/.aws:ro \
+     -v "$HOME"/.kube:/home/kops/.kube:rw \
+     -v /your/workdir:/home/kops/work \
+     sigursoft/kops.aws
+   ```
+
 Build from Source
 -----------------
 
