@@ -43,5 +43,6 @@ VOLUME ["/home/kops/shared"]
 
 ENV AWS_ACCESS_KEY_ID yourkeyhere
 ENV AWS_SECRET_ACCESS_KEY yoursecretaccesskeyhere
+ENV AWS_DEFAULT_REGION yourdefaultregion
 
 ENTRYPOINT ["/bin/bash"]
