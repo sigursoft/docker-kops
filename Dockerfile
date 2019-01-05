@@ -49,4 +49,6 @@ ENV AWS_ACCESS_KEY_ID yourkeyhere
 ENV AWS_SECRET_ACCESS_KEY yoursecretaccesskeyhere
 ENV AWS_DEFAULT_REGION yourdefaultregion
 
+ENV KOPS_STATE_STORE yourkopsstatestore
+
 ENTRYPOINT ["/bin/bash"]
