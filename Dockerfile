@@ -36,7 +36,8 @@ RUN mkdir /home/kops/.kube && \
     touch /home/kops/.kube/config
 
 RUN echo ". /etc/bash_completion" >> ~/.bashrc && \
-    echo "source <(kubectl completion bash)" >> ~/.bashrc
+    echo "source <(kubectl completion bash)" >> ~/.bashrc && \
+    echo "source <(kops completion bash)" >> ~/.bashrc
 
 VOLUME ["/home/kops/shared"]
 
