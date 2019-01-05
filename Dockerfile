@@ -10,6 +10,7 @@ RUN apt-get update -qq
 
 RUN apt-get install -y \
     jq \
+    ssh \
     nano \
     groff \
     bash-completion
@@ -39,10 +40,15 @@ RUN echo ". /etc/bash_completion" >> ~/.bashrc && \
     echo "source <(kubectl completion bash)" >> ~/.bashrc && \
     echo "source <(kops completion bash)" >> ~/.bashrc
 
-VOLUME ["/home/kops/shared"]
+VOLUME ["/home/kops/.ssh"]
+VOLUME ["/home/kops/.aws"]
+VOLUME ["/home/kops/.kube"]
+VOLUME ["/home/kops/work"]
 
 ENV AWS_ACCESS_KEY_ID yourkeyhere
 ENV AWS_SECRET_ACCESS_KEY yoursecretaccesskeyhere
 ENV AWS_DEFAULT_REGION yourdefaultregion
+
+ENV KOPS_STATE_STORE yourkopsstatestore
 
 ENTRYPOINT ["/bin/bash"]
