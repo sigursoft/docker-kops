@@ -1,6 +1,5 @@
 docker-kops
 ==============
-[![Docker Build Status](https://img.shields.io/docker/build/sigursoft/kops.aws.svg)]()
 
 [![Docker Hub](https://img.shields.io/badge/docker-ready-blue.svg)](https://hub.docker.com/r/sigursoft/kops.aws/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/sigursoft/kops.aws.svg)]()
