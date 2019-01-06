@@ -1,10 +1,10 @@
 FROM debian:stable
 LABEL maintainer="Anton Kozik"
 
-ENV LAST_UPDATE=2019-01-03
+ENV LAST_UPDATE=2019-01-06
 ARG KOPS_VERSION=1.11.0
 ARG KUBECTL_VERSION=1.11.6
-ARG AWSCLI_VERSION=1.16.82
+ARG AWSCLI_VERSION=1.16.84
 
 RUN apt-get update -qq
 
@@ -44,10 +44,6 @@ VOLUME ["/home/kops/.ssh"]
 VOLUME ["/home/kops/.aws"]
 VOLUME ["/home/kops/.kube"]
 VOLUME ["/home/kops/work"]
-
-ENV AWS_ACCESS_KEY_ID yourkeyhere
-ENV AWS_SECRET_ACCESS_KEY yoursecretaccesskeyhere
-ENV AWS_DEFAULT_REGION yourdefaultregion
 
 ENV KOPS_STATE_STORE yourkopsstatestore
 
