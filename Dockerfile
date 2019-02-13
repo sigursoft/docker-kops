@@ -16,8 +16,8 @@ RUN apt-get install -y \
     bash-completion
 
 RUN apt-get -y install \
-    python-pip && \
-    pip install awscli==${AWSCLI_VERSION} && \
+    python3-pip && \
+    pip3 install awscli==${AWSCLI_VERSION} && \
     apt-get clean && \
     apt-get autoclean && \
     apt-get autoremove && \
