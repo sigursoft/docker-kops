@@ -4,7 +4,7 @@ LABEL maintainer="Anton Kozik"
 ENV LAST_UPDATE=2019-01-06
 ARG KOPS_VERSION=1.9.2
 ARG KUBECTL_VERSION=1.9.11
-ARG AWSCLI_VERSION=1.16.84
+ARG AWSCLI_VERSION=1.16.103
 
 RUN apt-get update -qq
 
@@ -16,8 +16,8 @@ RUN apt-get install -y \
     bash-completion
 
 RUN apt-get -y install \
-    python-pip && \
-    pip install awscli==${AWSCLI_VERSION} && \
+    python3-pip && \
+    pip3 install awscli==${AWSCLI_VERSION} && \
     apt-get clean && \
     apt-get autoclean && \
     apt-get autoremove && \
