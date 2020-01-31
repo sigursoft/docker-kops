@@ -1,4 +1,4 @@
-FROM debian:stable
+FROM debian:10
 LABEL maintainer="Anton Kozik"
 
 ENV LAST_UPDATE=2020-01-22
