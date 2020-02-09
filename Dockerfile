@@ -26,7 +26,7 @@ RUN apt-get -y install \
 ADD https://storage.googleapis.com/kubernetes-release/release/v${KUBECTL_VERSION}/bin/linux/amd64/kubectl /usr/local/bin/kubectl
 RUN chmod +x /usr/local/bin/kubectl
 
-ADD https://github.com/kubernetes/kops/releases/download/${KOPS_VERSION}/kops-linux-amd64 /usr/local/bin/kops
+ADD https://github.com/kubernetes/kops/releases/download/v${KOPS_VERSION}/kops-linux-amd64 /usr/local/bin/kops
 RUN chmod +x /usr/local/bin/kops
 
 RUN useradd -ms /bin/bash kops
