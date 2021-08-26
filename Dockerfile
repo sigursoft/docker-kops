@@ -1,4 +1,4 @@
-FROM debian:10
+FROM debian:11
 LABEL maintainer="Anton Kozik"
 
 ENV LAST_UPDATE=2021-08-26
