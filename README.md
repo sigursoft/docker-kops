@@ -7,7 +7,7 @@ docker-kops
 
 [Docker](https://www.docker.com) image for running [kops](https://github.com/kubernetes/kops), [kubectl](https://github.com/kubernetes/kubectl) and the [Amazon Web Services Command Line Interface](http://aws.amazon.com/cli/).
 
-Based on Debian 11 Buster stable image the versions currently included are *kops 1.25.3, *kubectl 1.25.5*, *aws-cli 1.27.34* on *Python 3.9.2*.
+Based on Debian 11 Buster stable image the versions currently included are *kops 1.25.3*, *kubectl 1.25.5*, *aws-cli 1.27.34* on *Python 3.9.2*.
 
 Background
 ----------
