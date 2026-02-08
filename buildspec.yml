@@ -5,12 +5,13 @@ env:
   secrets-manager:
     DOCKERHUB_USERNAME: dockerhub:username
     DOCKERHUB_PASSWORD: dockerhub:password
-    
+
 phases:
   pre_build:
     commands:
       - echo Logging in to Docker Hub...
-      - docker login --username $DOCKERHUB_USERNAME --password $DOCKERHUB_PASSWORD
+      - docker login --username $DOCKERHUB_USERNAME --password
+        $DOCKERHUB_PASSWORD
   build:
     commands:
       - echo Build started on `date`
